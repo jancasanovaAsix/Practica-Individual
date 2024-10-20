@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pàgina de Futbol</title>
+    <style>
+        /* Estils generals */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f3f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e272e;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #ff793f;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffeaa7;
+        }
+
+        /* Contingut principal */
+        .container {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1e272e;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background-color: #ff793f;
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+        }
+
+        .article {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .article img {
+            width: 100%;
+            max-width: 350px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .article img:hover {
+            transform: scale(1.1);
+        }
+
+        .article-content {
+            padding: 20px;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .article-content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* Botons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff793f;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ffb142;
+        }
+
+        /* Peu de pàgina */
+        footer {
+            background-color: #1e272e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 93px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Animació de secció */
+        .container section {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Futbol Mundial</h1>
+    </header>
+
+    <nav>
+        <a href="#historia">Història</a>
+        <a href="#equips">Equips</a>
+        <a href="#contacte">Contacte</a>
+    </nav>
+
+    <div class="container">
+        <section id="historia">
+            <h2 class="section-title">Història del Futbol</h2>
+            <div class="article">
+                <img src="https://example.com/imatge_futbol.jpg" alt="Història del futbol">
+                <div class="article-content">
+                    <p>El futbol és un esport amb més de 150 anys d'història. Des del seu naixement a Anglaterra, ha crescut fins a convertir-se en un fenomen global.</p>
+                    <a href="#" class="btn">Llegeix més</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="equips">
+            <h2 class="section-title">Equips Famosos</h2>
+            <div class="article">
+                <img src="images/Barça1.jpg" alt="Equips famosos">
+                <div class="article-content">
+                    <p>Equips com el FC Barcelona, el Real Madrid i el Bayern Munic han marcat època al món del futbol amb victòries històriques i jugadors llegendaris.</p>
+                    <a href="#" class="btn">Descobreix més</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Futbol Mundial. Fet per Jan Casanova</p>
+    </footer>
+</body>
+</html>
